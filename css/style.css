@@ -87,6 +87,10 @@ input {
     width: 25ch;
 }
 
+input.error {
+    border: 1px solid red;
+}
+
 input:focus {
     border: 1px solid blue;
     box-shadow: 0 2px 2px blue;
