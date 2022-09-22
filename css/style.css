@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200;1,400&display=swap');
 
+.container button {
+    margin: 1rem 0.75rem 1rem;
+    padding: 1.5rem 1rem;
+}
+
 body {
     background: #f9fafb;
     display: flex;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
+}
+
+fieldset {
+    border: none;
 }
 
 .sidebar {
@@ -45,4 +54,15 @@ body {
 .container > article {
     font-size: 115%;
     font-weight: bold;
+}
+
+.container .form-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .form-input > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
