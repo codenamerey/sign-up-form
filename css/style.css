@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200;1,400&display=swap');
 
 body {
+    background: #f9fafb;
     display: flex;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
@@ -22,6 +23,7 @@ body {
     background: rgba(0, 0, 0, 0.5);
     bottom: 0;
     color: white;
+    font-size: .75rem;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -35,5 +37,12 @@ body {
 }
 
 .container {
+    box-sizing: border-box;
     flex-basis: 65%;
+    padding: 6rem 2rem;
+}
+
+.container > article {
+    font-size: 115%;
+    font-weight: bold;
 }
