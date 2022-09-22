@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200;1,400&display=swap');
+
+body {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.sidebar {
+    flex-basis: 35%;
+    height: 100vh;
+    position: relative;
+}
+
+.sidebar-image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.sidebar > p {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.sidebar a {
+    color: yellowgreen;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.container {
+    flex-basis: 65%;
+}
