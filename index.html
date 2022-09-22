@@ -39,7 +39,7 @@
                         <input placeholder="(212)456-7890" type="tel" id="phone-number" name="phoneNumber" required>
 
                         <label for="confirm-password"><span>Confirm Password:</span><strong><span aria-label="required">*</span></strong></label>
-                        <input type="password" id="first-name" required>
+                        <input type="password" id="confirm-password" required>
                     </div>
                 </div>
             </fieldset>
@@ -49,5 +49,26 @@
             Already have an account? <a href="#">Log in.</a>
         </footer>
     </div>
+
+    <script>
+        //Get both password inputs
+        const password = document.querySelector('#password');
+        const confirmPassword = document.querySelector('#confirm-password');
+        const passwordContainers = [password, confirmPassword];
+        confirmPassword.addEventListener('input', () => {
+            if(password.value && password.value == confirmPassword.value) {
+                passwordContainers.forEach((container) => {
+                    container.classList.remove('error');
+                });
+                return;
+            }
+
+            if(!password.classList.contains('error')) {
+                passwordContainers.forEach((container) => {
+                    container.classList.add('error');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
