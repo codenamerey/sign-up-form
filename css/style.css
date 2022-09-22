@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200;1,400&display=swap');
 
 .container button {
+    background: white;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    color: blue;
+    font-weight: 900;
     margin: 1rem 0.75rem 1rem;
     padding: 1.5rem 1rem;
+    transition: all 500ms ease-in-out;
+}
+
+.container button:hover {
+    color: white;
+    background: blue;
 }
 
 body {
@@ -62,7 +73,33 @@ fieldset {
 }
 
 .container .form-input > div {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
+    display: flex;
+    row-gap: .5rem;
+    flex-direction: column;
 }
+
+input {
+    border: 1px solid gray;
+    border-radius: .5rem;
+    padding: 1rem 1rem;
+    transition: all 500ms ease;
+    width: 25ch;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 0 2px 2px blue;
+    outline-color: blue;
+}
+
+label {
+    position: relative;
+    width: 100%;
+}
+
+[aria-label="required"] {
+    right: 0;
+    position: absolute;
+}
+
